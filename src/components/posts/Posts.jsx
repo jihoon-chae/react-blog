@@ -4,10 +4,11 @@ import Post from '../post/Post'
 export default function Posts() {
 
 return(
-  <>
+  <div class="max-width">
+				<h2 class="a11y-hidden">Post</h2>
 				<ul class="posts">
           <Post />
         </ul>
-  </>
+        </div>
 )
 }

@@ -5,7 +5,7 @@ export default function LogoutButton() {
     <li>
       <button class="button white">
         <img src="./assets/icon-logout.svg" alt="" />
-        <span>Logout</span>
+        <span>로그아웃</span>
       </button>
     </li>
   );

@@ -8,7 +8,7 @@ export default function Main() {
       <div class="max-width">
         <h2 class="a11y-hidden">Post</h2>
         <Posts />
-        <About />
+        <About /> 
       </div>
     </main>
   );

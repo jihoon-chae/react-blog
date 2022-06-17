@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import "./header.css";
 import LogoutButton from "../button/LogoutButton.jsx";
 import WriteButton from "../button/WriteButton";
@@ -15,32 +17,27 @@ export default function Header() {
 
           <ul>
             {/* 로그인  */}
-            <li class="profile-img">
+            {/* <li class="profile-img">
               <a href="#">
                 <img src="./assets/jihoon.jpeg" alt="My Page" />
               </a>
-            </li>
+            </li> */}
             <WriteButton />
 
-            <LogoutButton />
-            {/* //로그인  */}
+            {/* <LogoutButton /> */}
 
-            {/* 로그아웃
-			
-					<li>
-						<a href="#" class="button gray">
-							<img src="./assets/icon-login.svg" alt="" />
-							<span>Login</span>
-						</a>
-					</li>
-					<li class="only-pc">
-						<a href="#" class="button gray">
-							<img src="./assets/icon-register.svg" alt="" />
-							<span>Register</span>
-						</a>
-					</li>
-          
-					// 로그아웃 */}
+            <li>
+              <Link to="/login" class="button gray">
+                <img src="./assets/icon-login.svg" alt="" />
+                <span>로그인</span>
+              </Link>
+            </li>
+            <li class="only-pc">
+              <Link to="/login" class="button gray">
+                  <img src="./assets/icon-register.svg" alt="" />
+                  <span>회원가입</span>
+              </Link>
+            </li>
           </ul>
         </div>
       </header>
