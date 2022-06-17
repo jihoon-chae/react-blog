@@ -16,7 +16,7 @@ export default function Header(){
 					 {/* 로그인  */}
 					<li class="profile-img">
 						<a href="#">
-							<img src="./assets/profile.jpg" alt="My Page" />
+							<img src="./assets/jihoon.jpeg" alt="My Page" />
 						</a>
 					</li>
 					<li>
