@@ -1,12 +1,14 @@
+import { Link } from "react-router-dom";
+
 import "./post.css";
 import Category from "../category/Category";
-import Author from '../author/Author';
+import Author from "../author/Author";
 
 export default function Post() {
   return (
     <>
       <li>
-        <a href="post-view.html" class="post">
+        <Link to="/post">
           <article>
             <img src="./assets/post-img6.jpg" alt="" />
             <div class="contents-wrap">
@@ -14,7 +16,7 @@ export default function Post() {
 
               <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit</h3>
 
-          <Author />
+              <Author />
 
               <p class="post-description">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -36,10 +38,10 @@ export default function Post() {
               </p>
             </div>
           </article>
-        </a>
+        </Link>
       </li>
       <li>
-        <a href="post-view.html" class="post">
+        <Link to="/post">
           <article>
             <img src="./assets/post-img5.jpg" alt="" />
             <div class="contents-wrap">
@@ -69,10 +71,10 @@ export default function Post() {
               </p>
             </div>
           </article>
-        </a>
+        </Link>
       </li>
       <li>
-        <a href="post-view.html" class="post">
+      <Link to="/post">
           <article>
             <img src="./assets/post-img4.jpg" alt="" />
             <div class="contents-wrap">
@@ -102,10 +104,10 @@ export default function Post() {
               </p>
             </div>
           </article>
-        </a>
+          </Link>
       </li>
       <li>
-        <a href="post-view.html" class="post">
+      <Link to="/post">
           <article>
             <img src="./assets/post-img3.jpg" alt="" />
             <div class="contents-wrap">
@@ -135,10 +137,10 @@ export default function Post() {
               </p>
             </div>
           </article>
-        </a>
+          </Link >
       </li>
       <li>
-        <a href="post-view.html" class="post">
+      <Link to="/post">
           <article>
             <img src="./assets/post-img2.jpg" alt="" />
             <div class="contents-wrap">
@@ -167,10 +169,10 @@ export default function Post() {
               </p>
             </div>
           </article>
-        </a>
+          </Link >
       </li>
       <li>
-        <a href="post-view.html" class="post">
+      <Link to="/post">
           <article>
             <img src="./assets/post-img1.jpg" alt="" />
             <div class="contents-wrap">
@@ -199,7 +201,7 @@ export default function Post() {
               </p>
             </div>
           </article>
-        </a>
+          </Link >
       </li>
     </>
   );
