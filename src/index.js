@@ -1,8 +1,14 @@
-import React from 'react';
-// import ReactDOM from 'react-dom'; //구버전
-import { createRoot } from 'react-dom/client';
-import App from './App';
+import React from "react";
+import { BrowserRouter } from "react-router-dom";
+import { createRoot } from "react-dom/client";
+import App from "./App";
 
-const container = document.getElementById('root');
+const container = document.getElementById("root");
 const root = createRoot(container);
-root.render(<App tab="home" />);
+root.render(
+  <React.StrictMode>
+    <BrowserRouter>
+      <App tab="home" />
+    </BrowserRouter>
+  </React.StrictMode>
+);

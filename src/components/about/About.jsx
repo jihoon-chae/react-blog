@@ -4,7 +4,7 @@ export default function About() {
   return(
     <aside class="about">
 					<h2>About Me</h2>
-					<img src="./assets/profile.jpg" alt="" class="user-profile" />
+					<img src="./assets/jihoon.jpeg" alt="" class="user-profile" />
 					<p class="user-name">Chilli</p>
 					<p class="user-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 					<h3>Categories</h3>

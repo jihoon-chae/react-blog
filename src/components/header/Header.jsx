@@ -1,37 +1,31 @@
-import './header.css'
-import Button from '../button/Button'
+import "./header.css";
+import LogoutButton from "../button/LogoutButton.jsx";
+import WriteButton from "../button/WriteButton";
 
-export default function Header(){
+export default function Header() {
   return (
     <>
-    <header>
-			<div class="max-width">
-				<h1>
-					<a href="./">
-						<img src="./assets/Logo.svg" alt="My Blog" />
-					</a>
-				</h1>
-				
-				<ul>
-					 {/* 로그인  */}
-					<li class="profile-img">
-						<a href="#">
-							<img src="./assets/jihoon.jpeg" alt="My Page" />
-						</a>
-					</li>
-					<li>
-						<a href="#" class="button">
-							<img src="  ./assets/icon-modify-white.svg" alt="" />
-							<span>Write</span>
-						</a>
-					</li>
-					<li>
-						<Button />
-					</li>
-				 {/* //로그인  */}
+      <header>
+        <div class="max-width">
+          <h1>
+            <a href="./">
+              <img src="./assets/Logo.svg" alt="My Blog" />
+            </a>
+          </h1>
 
+          <ul>
+            {/* 로그인  */}
+            <li class="profile-img">
+              <a href="#">
+                <img src="./assets/jihoon.jpeg" alt="My Page" />
+              </a>
+            </li>
+            <WriteButton />
 
-				 {/* 로그아웃
+            <LogoutButton />
+            {/* //로그인  */}
+
+            {/* 로그아웃
 			
 					<li>
 						<a href="#" class="button gray">
@@ -47,10 +41,9 @@ export default function Header(){
 					</li>
           
 					// 로그아웃 */}
-
-				</ul>
-			</div>
-		</header>
+          </ul>
+        </div>
+      </header>
     </>
-  )
+  );
 }

@@ -5,7 +5,7 @@ import Author from '../author/Author';
 export default function Post() {
   return (
     <>
-      <li>jihoon.jpeg
+      <li>
         <a href="post-view.html" class="post">
           <article>
             <img src="./assets/post-img6.jpg" alt="" />
