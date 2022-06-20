@@ -1,6 +1,6 @@
 import "./button.css";
 
-export default function LogoutButton() {
+export default function LogoutButton(props) {
   return (
     <li>
       <button class="button white">

@@ -1,15 +1,21 @@
+import { Link } from 'react-router-dom';
 import "./login.css";
+// import {setIsLogin} from '../../components/header/Header';
+
+
 
 export default function Login() {
+
+  
   return (
       <article class="container-login-modal">
         <div class="top-login-modal">
           <h2>로그인 또는 회원가입</h2>
-          <img class="button-close" src="./assets/close.png" alt="닫기 버튼" />
+          {/* <img class="button-close" src="./assets/close.png" alt="닫기 버튼" /> */}
         </div>
         <div class="content-login-modal">
           <p class="text-login-modal">
-            위니브에서 여러분의 궁금증을 해결하세요!:)
+            My Blog에서 여러분의 궁금증을 해결하세요!:)
           </p>
           <input type="text" name="user-id" id="user-id" placeholder="아이디" />
           <label for="user-id"></label>
@@ -24,9 +30,11 @@ export default function Login() {
           </label>
           <p class="warning-login">아이디 혹은 비밀번호와 일치하지 않습니다.</p>
           <div class="maintain"></div>
-          <a href="#none" class="button-login button-original">
+          <Link to="/" class="button-login button-original" onClick={()=>{
+            setIsLogin(true)
+          }} >
             로그인
-          </a>
+          </Link>
 
           <div class="container-join-find">
             <div class="find-join">

@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
-          <Route path="/" exact component={Homepage} />
+          <Route path="/" exact component={Homepage} /> 
           <Route path="/post" exact component={PostView} />
           <Route path="/login" exact component={Login} />
       </BrowserRouter>

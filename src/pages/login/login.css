@@ -257,6 +257,13 @@ top-login-modal h2 {
   background-repeat: no-repeat;
 }
 
+.content-login-modal .button-original::before {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+}
+
 .content-login-modal .button-original {
   margin-bottom: 15px;
   background-color: #2f80ed;
