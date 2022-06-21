@@ -3,16 +3,8 @@ import { Link } from "react-router-dom";
 import "./header.css";
 import LogoutButton from "../button/LogoutButton.jsx";
 import WriteButton from "../button/WriteButton";
-import { useState } from "react";
 
-export default function Header() {
-  
-
-  // useSelector((state) => {
-  //   return state.isLogin;
-  // });
-  const [isLogin, setIsLogin] = useState(false);
-
+export default function Header(props) {
   return (
     <>
       <header>
@@ -23,7 +15,7 @@ export default function Header() {
             </a>
           </h1>
           <ul>
-            {isLogin == true ? (
+            {props.isLogin == true ? (
               <>
                 <li class="profile-img">
                   <a href="#">
@@ -35,6 +27,8 @@ export default function Header() {
               </>
             ) : (
               <>
+                {" "}
+                <WriteButton />
                 <li>
                   <Link to="/login" class="button gray">
                     <img src="./assets/icon-login.svg" alt="" />

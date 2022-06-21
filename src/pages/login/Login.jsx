@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import "./login.css";
 // import {setIsLogin} from '../../components/header/Header';
 
-export default function Login() {
+export default function Login(props) {
   return (
     <article class="container-login-modal">
       <div class="top-login-modal">
@@ -26,7 +26,7 @@ export default function Login() {
         </label>
         <p class="warning-login">아이디 혹은 비밀번호와 일치하지 않습니다.</p>
         <div class="maintain"></div>
-        <Link to="/" class="button-login button-original">
+        <Link to="/" class="button-login button-original " onClick={props.handleClick}>
           로그인
         </Link>
 
