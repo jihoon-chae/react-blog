@@ -23,7 +23,7 @@ export default function Header(props) {
                   </a>
                 </li>
                 <WriteButton />
-                <LogoutButton />
+                <LogoutButton  handleClick={props.handleClick}/>
               </>
             ) : (
               <>

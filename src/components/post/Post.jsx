@@ -7,6 +7,7 @@ import axios from "axios";
 // import '../../../public/data.json'
 
 export default function Post() {
+
   axios
     .get("https://jihoon-chae.github.io/react-blog/public/data.json")
     .then((result) => {

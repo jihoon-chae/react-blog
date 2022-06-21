@@ -1,8 +1,8 @@
 import "./button.css";
 
-export default function LogoutButton() {
+export default function LogoutButton(props) {
   return (
-    <li>
+    <li onClick={props.handleClick}>
       <button class="button white">
         <img src="./assets/icon-logout.svg" alt="" />
         <span>로그아웃</span>
