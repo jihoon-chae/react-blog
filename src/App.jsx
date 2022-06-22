@@ -18,7 +18,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <Route path="/" exact render={() => <Homepage isLogin={isLogin} />} />
+        <Route path="/" exact render={() => <Homepage isLogin={isLogin} handleClick={handleClick} />} />
         <Route path="/post" exact component={PostView} />
         <Route
           path="/login"

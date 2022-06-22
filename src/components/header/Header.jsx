@@ -15,7 +15,7 @@ export default function Header(props) {
             </a>
           </h1>
           <ul>
-            {props.isLogin == true ? (
+            {props.isLogin ? (
               <>
                 <li class="profile-img">
                   <a href="#">
@@ -23,11 +23,10 @@ export default function Header(props) {
                   </a>
                 </li>
                 <WriteButton />
-                <LogoutButton  handleClick={props.handleClick}/>
+                <LogoutButton handleClick={props.handleClick} />
               </>
             ) : (
               <>
-                {" "}
                 <WriteButton />
                 <li>
                   <Link to="/login" class="button gray">
