@@ -10,7 +10,7 @@ export default function Homepage(props) {
     <>
       <Header isLogin={props.isLogin} handleClick={props.handleClick}/>
       <Banner />
-      <Main />
+      <Main isLogin={props.isLogin} handleClick={props.handleClick}/>
       <Footer />
     </>
   );

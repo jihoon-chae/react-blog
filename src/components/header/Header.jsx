@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "./header.css";
 import LogoutButton from "../button/LogoutButton.jsx";
 import WriteButton from "../button/WriteButton";
+import Profile from '../profile/Profile';
 
 export default function Header(props) {
   return (
@@ -17,11 +18,7 @@ export default function Header(props) {
           <ul>
             {props.isLogin ? (
               <>
-                <li class="profile-img">
-                  <a href="#">
-                    <img src="./assets/jihoon.jpeg" alt="My Page" />
-                  </a>
-                </li>
+                <Profile />
                 <WriteButton />
                 <LogoutButton handleClick={props.handleClick} />
               </>
