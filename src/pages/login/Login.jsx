@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import "./login.css";
-// import {setIsLogin} from '../../components/header/Header';
 
 export default function Login(props) {
   return (

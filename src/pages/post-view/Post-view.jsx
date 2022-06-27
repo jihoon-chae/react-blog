@@ -5,7 +5,8 @@ import Footer from "../../components/footer/Footer";
 import Author from "../../components/author/Author";
 import Category from "../../components/category/Category";
 
-export default function PostView() {
+export default function PostView(props) {
+  console.log(props);
   return (
     <>
       <Header />

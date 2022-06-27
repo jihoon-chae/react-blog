@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 import "./header.css";
 import LogoutButton from "../button/LogoutButton.jsx";
 import WriteButton from "../button/WriteButton";

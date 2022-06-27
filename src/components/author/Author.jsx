@@ -1,14 +1,15 @@
-import './author.css'
+import "./author.css";
 
-export default function Author(){
-  return(
-     <dl class="author-wrap">
-                <dt class="a11y-hidden">Author</dt>
-                <dd class="author">
-                  <img src="./assets/profile.jpg" alt="" /> Chilli
-                </dd>
-                <dt class="a11y-hidden">Created</dt>
-                <dd class="created">2022.05.25</dd>
-              </dl>
-  )
+export default function Author(props) {
+  return (
+    <dl class="author-wrap">
+      <dt class="a11y-hidden">Author</dt>
+      <dd class="author">
+        <img src={props.posts[props.index].profileImg} alt="" />
+        {props.posts[props.index].userName}
+      </dd>
+      <dt class="a11y-hidden">Created</dt>
+      <dd class="created">{props.posts[props.index].created}</dd>
+    </dl>
+  );
 }

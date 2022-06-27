@@ -7,7 +7,7 @@ export default function Main(props) {
     <main>
       <div class="max-width">
         <h2 class="a11y-hidden">Post</h2>
-        <Posts />
+        <Posts posts={props.posts} />
         {props.isLogin ? <About /> : <></>}
       </div>
     </main>

@@ -1,9 +1,9 @@
 import React from "react";
 import { BrowserRouter, Route } from "react-router-dom";
-import Login from "./pages/login/Login";
-import { useState } from "react";
-
+import { useEffect, useState } from "react";
 import "./App.css";
+import axios from "axios";
+import Login from "./pages/login/Login";
 import Homepage from "./pages/homepage/Homepage.jsx";
 import PostView from "./pages/post-view/Post-view";
 
@@ -15,6 +15,16 @@ function App() {
   const handleClick = () => {
     isLogin ? setIsLogin(false) : setIsLogin(true);
   };
+
+  const [posts, setposts] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get("https://jihoon-chae.github.io/react-blog/public/data.json")
+      .then((result) => {
+        setposts([...result.data.posts]);
+      });
+  }, []);
   return (
     <>
       <BrowserRouter>
@@ -22,10 +32,19 @@ function App() {
           path="/"
           exact
           render={() => (
-            <Homepage isLogin={isLogin} handleClick={handleClick} />
+            <Homepage
+              isLogin={isLogin}
+              handleClick={handleClick}
+              posts={posts}
+            />
           )}
         />
-        <Route path="/post" exact component={PostView} />
+        <Route
+          path="/post"
+          exact
+          component={PostView}
+          render={() => <PostView posts={posts} />}
+        />
         <Route
           path="/login"
           exact
