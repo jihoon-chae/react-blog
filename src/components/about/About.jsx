@@ -5,7 +5,7 @@ export default function About() {
     <aside class="about">
 					<h2>About Me</h2>
 					<img src="./assets/jihoon.jpeg" alt="" class="user-profile" />
-					<p class="user-name">Chilli</p>
+					<p class="user-name">Jihoon Chae</p>
 					<p class="user-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 					<h3>Categories</h3>
 					<ul class="categories">

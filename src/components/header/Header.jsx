@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./header.css";
 import LogoutButton from "../button/LogoutButton.jsx";
 import WriteButton from "../button/WriteButton";
-import Profile from '../profile/Profile';
+import Profile from '../profile/Profile.jsx';
 
 export default function Header(props) {
   return (

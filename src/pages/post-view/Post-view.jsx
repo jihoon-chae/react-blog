@@ -5,7 +5,6 @@ import Footer from "../../components/footer/Footer";
 import Author from "../../components/author/Author";
 import Category from "../../components/category/Category";
 
-
 export default function PostView() {
   return (
     <>
@@ -16,7 +15,6 @@ export default function PostView() {
           <section class="wrap-box">
             <div class="inner">
               <Author />
-
               <Category />
               <div class="title-wrap">
                 <h2>
