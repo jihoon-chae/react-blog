@@ -14,7 +14,7 @@ export default function Post(props) {
               <article>
                 <img src={post.thumbnail} alt="" />
                 <div class="contents-wrap">
-                  <Category posts={props.posts} post={post} />
+                  <Category category={post.category} />
                   <h3>{post.title}</h3>
                   <Author
                     profileImg={post.profileImg}

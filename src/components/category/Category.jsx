@@ -5,10 +5,10 @@ export default function Category(props) {
     <>
       <dl class="category">
         <dt class="a11y-hidden">Category</dt>
-        {props.post.category.map((category) => {
+        {props.category.map((category, index) => {
           return (
             <>
-              <dd key={props.post.id}>{category}</dd>
+              <dd key={index}>{category}</dd>
             </>
           );
         })}
