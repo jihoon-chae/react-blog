@@ -9,7 +9,7 @@ export default function PostView(props) {
   console.log(props);
   return (
     <>
-      <Header />
+      <Header isLogin={props.isLogin} handleClick={props.handleClick} />
       <Banner />
       <div class="view">
         <div class="max-width">

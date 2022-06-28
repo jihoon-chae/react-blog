@@ -4,6 +4,7 @@ import WriteButton from "../button/WriteButton";
 import LoginButton from "../button/LoginButton";
 import RegisterButton from "../button/RegisterButton";
 import Profile from "../profile/Profile.jsx";
+import { Link } from 'react-router-dom';
 
 export default function Header(props) {
   return (
@@ -11,9 +12,9 @@ export default function Header(props) {
       <header>
         <div class="max-width">
           <h1>
-            <a href="./">
+            <Link to="/">
               <img src="./assets/Logo.svg" alt="My Blog" />
-            </a>
+            </Link>
           </h1>
           <ul>
             {props.isLogin ? (
