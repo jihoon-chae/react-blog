@@ -15,8 +15,11 @@ export default function PostView(props) {
         <div class="max-width">
           <section class="wrap-box">
             <div class="inner">
-              <Author />
-              <Category />
+              <Author isLogin={props.isLogin} handleClick={props.handleClick} />
+              <Category
+                isLogin={props.isLogin}
+                handleClick={props.handleClick}
+              />
               <div class="title-wrap">
                 <h2>
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
