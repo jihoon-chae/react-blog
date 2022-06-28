@@ -16,7 +16,11 @@ export default function Post(props) {
                 <div class="contents-wrap">
                   <Category posts={props.posts} post={post} />
                   <h3>{post.title}</h3>
-                  <Author posts={props.posts} post={post} index={index} />
+                  <Author
+                    profileImg={post.profileImg}
+                    userName={post.userName}
+                    created={post.created}
+                  />
                   <p class="post-description">{post.contents[0].text}</p>
                 </div>
               </article>
