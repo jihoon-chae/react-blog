@@ -7,10 +7,10 @@ import Author from "../author/Author";
 export default function Post(props) {
   return (
     <>
-      {props.posts.map((post, index) => {
+      {props.posts.map((post) => {
         return (
           <li key={post.id}>
-            <Link to="/post" className="post">
+            <Link to={`/post/${post.id}`} className="post">
               <article>
                 <img src={post.thumbnail} alt="" />
                 <div class="contents-wrap">

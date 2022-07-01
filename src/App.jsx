@@ -40,10 +40,16 @@ function App() {
           )}
         />
         <Route
-          path="/post"
+          path="/post/:id"
           exact
           component={PostView}
-          render={() => <PostView posts={posts} />}
+          render={() => (
+            <PostView
+              posts={posts}
+              isLogin={isLogin}
+              handleClick={handleClick}
+            />
+          )}
         />
         <Route
           path="/login"

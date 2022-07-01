@@ -1,3 +1,5 @@
+import { useParams } from "react-router-dom";
+
 import "./post-view.css";
 import Header from "../../components/header/Header";
 import Banner from "../../components/banner/Banner";
@@ -6,7 +8,8 @@ import Author from "../../components/author/Author";
 import Category from "../../components/category/Category";
 
 export default function PostView(props) {
-  console.log(props);
+  const { id } = useParams();
+  const post = props.posts.find((post) => post.id == parseInt(id));
   return (
     <>
       <Header isLogin={props.isLogin} handleClick={props.handleClick} />
@@ -15,11 +18,12 @@ export default function PostView(props) {
         <div class="max-width">
           <section class="wrap-box">
             <div class="inner">
-              <Author isLogin={props.isLogin} handleClick={props.handleClick} />
-              <Category
-                isLogin={props.isLogin}
-                handleClick={props.handleClick}
+              <Author
+                profileImg={post.profileImg}
+                userName={post.userName}
+                created={post.created}
               />
+              <Category categories={post.category} />
               <div class="title-wrap">
                 <h2>
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
