@@ -42,7 +42,7 @@ function App() {
         <Route
           path="/post/:id"
           exact
-          component={PostView}
+          // component={PostView}
           render={() => (
             <PostView
               posts={posts}

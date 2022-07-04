@@ -23,7 +23,8 @@ export default function PostView(props) {
                 userName={post.userName}
                 created={post.created}
               />
-              <Category categories={post.category} />
+              <Category category={post.category} />
+
               <div class="title-wrap">
                 <h2>
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
