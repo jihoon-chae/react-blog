@@ -1,4 +1,5 @@
 import "./profile.css";
+// import profileImg from "../../../public/assets/jihoon.jpeg"
 
 export default function Profile() {
   return (

@@ -4,7 +4,8 @@ import WriteButton from "../button/WriteButton";
 import LoginButton from "../button/LoginButton";
 import RegisterButton from "../button/RegisterButton";
 import Profile from "../profile/Profile.jsx";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
+import logoImg from "../../assets/Logo.svg";
 
 export default function Header(props) {
   return (
@@ -13,7 +14,7 @@ export default function Header(props) {
         <div class="max-width">
           <h1>
             <Link to="/">
-              <img src="./assets/Logo.svg" alt="My Blog" />
+              <img src={logoImg} alt="My Blog" />
             </Link>
           </h1>
           <ul>
