@@ -1,7 +1,8 @@
 # React Blog
 
 ## 📌 요약
-![Jul-05-2022 22-20-59.gif](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/7ab467f0-e9f5-4416-bbd4-1d90c9d30dfc/Jul-05-2022_22-20-59.gif)- 제공서비스
+<img src = https://s3.us-west-2.amazonaws.com/secure.notion-static.com/7ab467f0-e9f5-4416-bbd4-1d90c9d30dfc/Jul-05-2022_22-20-59.gif?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220705%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220705T143324Z&X-Amz-Expires=86400&X-Amz-Signature=d446b8e8d3670f82802595f2a794decb61a784b3108a4535be3297ac3cc6def7&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Jul-05-2022%252022-20-59.gif%22&x-id=GetObject >
+- 제공서비스
   - 로그인 및 회원가입(예정)
   - 게시글 CRUD (예정)
 
