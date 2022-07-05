@@ -7,6 +7,7 @@
 - JavaScript
 - React
 - HTML, CSS
+- Firebase (예정)
 
 <br>
 
