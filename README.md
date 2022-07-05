@@ -1,10 +1,14 @@
 # React Blog
 
+<br>
+
 ## 📌 사용 기술 및 라이브러리
 
 - JavaScript
 - React
 - HTML, CSS
+
+<br>
 
 ## 📌 담당한 기능
 
@@ -13,6 +17,8 @@
 - state 처리를 통해 header 버튼 바꾸기
 - axios와 useEffect를 통해 더미 데이터를 가져와 게시글, 블로그 정보, 유저정보 뿌려주기
 - useParams를 사용하여 동적페이지 구현
+
+<br>
 
 ## 📌 트러블슈팅
 
