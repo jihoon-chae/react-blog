@@ -1,7 +1,5 @@
 # React Blog
 
-<br>
-
 ## 📌 요약
 
 ![Jul-05-2022 22-20-59.gif](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/7ab467f0-e9f5-4416-bbd4-1d90c9d30dfc/Jul-05-2022_22-20-59.gif)
@@ -9,6 +7,8 @@
 - 제공서비스
   - 로그인 및 회원가입(예정)
   - 게시글 CRUD (예정)
+
+<br>
 
 ## 📌 사용 기술 및 라이브러리
 
